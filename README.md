@@ -26,7 +26,7 @@ Laptop was the top-performing product.
 Regional analysis helps identify high-performing areas.
 
 ## Dashboard Preview
-
+![Dashboard Preview] Screenshot 2026-06-08 072042.png
 
 ## Learning Outcomes
 Data Visualization
