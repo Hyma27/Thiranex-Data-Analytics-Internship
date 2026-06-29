@@ -207,19 +207,3 @@ This project successfully establishes an automated data cleaning and reporting p
 
 ---
 
-## 10. Viva Questions with Answers
-
-#### Q1: What libraries did you use in Python, and why?
-**Answer:** We used **Pandas** for core data structures (DataFrame) and cleaning tasks (dropping duplicates, cleaning strings, and filtering data), **Numpy** for numerical analysis, **Matplotlib** for static visualization exports, and **Openpyxl** as the underlying engine to format and output our final data structure to Excel.
-
-#### Q2: Why is it critical to remove duplicate records before building visualizations in Power BI?
-**Answer:** Duplicate records artificially inflate metrics such as count aggregations (Total Students) and can skew calculations like score averages. Removing the **10,000 duplicates** ensured that our dashboard reflects the actual performance of the unique **15,000 students**.
-
-#### Q3: Why did you convert text columns to Title Case during data cleaning?
-**Answer:** Inconsistent casing (e.g., `"public"`, `"Public"`, `"PUBLIC"`) is treated by visualization tools like Power BI as separate categories. Converting text values to Title Case ensures uniform groups, preventing charts and filters from splitting single categories.
-
-#### Q4: How is a KPI Card different from a Table visual in Power BI?
-**Answer:** A **KPI Card** displays a single aggregated value (like a sum, count, or average) for immediate tracking at a glance. A **Table** displays detailed, row-by-row grid data, which is useful when users need to drill down into individual record attributes.
-
-#### Q5: How do you refresh the Power BI dashboard when new student records are added?
-**Answer:** The dashboard points directly to the `Cleaned_Students_Performance.xlsx` path. When new raw data is received, we run the Python script to clean the data and overwrite the Excel file. Clicking the **Refresh** button in Power BI re-reads the updated Excel sheet, instantly refreshing all visual charts.
