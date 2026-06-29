@@ -1,0 +1,76 @@
+======================================================================
+          DATA CLEANING & REPORTING AUTOMATION REPORT
+======================================================================
+
+1. DATA SUMMARY METRICS
+-----------------------
+Total Raw Records Loaded:     25000
+Duplicate Records Removed:    10000
+Missing Values Checked:       0 found in raw file
+Missing Values Imputed:       No missing values detected (0)
+Total Cleaned Records Saved:  15000
+
+2. COLUMN DETAILS & DATA TYPES
+------------------------------
+ - student_id                : int64
+ - age                       : int64
+ - gender                    : object
+ - school_type               : object
+ - parent_education          : object
+ - study_hours               : float64
+ - attendance_percentage     : float64
+ - internet_access           : object
+ - travel_time               : object
+ - extra_activities          : object
+ - study_method              : object
+ - math_score                : float64
+ - science_score             : float64
+ - english_score             : float64
+ - overall_score             : float64
+ - final_grade               : object
+
+3. SUMMARY STATISTICS FOR SCORES
+--------------------------------
+         student_id           age  study_hours  attendance_percentage    math_score  science_score  english_score  overall_score
+count  15000.000000  15000.000000  15000.00000           15000.000000  15000.000000   15000.000000   15000.000000   15000.000000
+mean    7500.500000     16.476400      4.25936              74.991760     63.774553      63.751227      63.709227      64.015500
+std     4330.271354      1.704475      2.17244              14.401139     20.919958      21.027675      20.860201      18.977811
+min        1.000000     14.000000      0.50000              50.000000      0.000000       0.000000       0.000000      14.500000
+25%     3750.750000     15.000000      2.40000              62.600000     48.200000      48.100000      48.300000      49.000000
+50%     7500.500000     16.000000      4.30000              75.000000     64.100000      64.000000      64.200000      64.300000
+75%    11250.250000     18.000000      6.10000              87.400000     80.100000      80.100000      80.000000      79.100000
+max    15000.000000     19.000000      8.00000             100.000000    100.000000     100.000000     100.000000     100.000000
+
+4. LOGICAL CATEGORY SUMMARY
+---------------------------
+Records by Gender:
+gender
+Other     5042
+Male      4979
+Female    4979
+
+Records by School Type:
+school_type
+Private    7587
+Public     7413
+
+Records by Parental Education:
+parent_education
+Diploma          2581
+Post Graduate    2535
+High School      2532
+Graduate         2481
+No Formal        2445
+PhD              2426
+
+Records by Final Grade:
+final_grade
+D    3770
+C    3697
+E    3378
+F    1796
+B    1638
+A     721
+
+======================================================================
+Report generated successfully by Data Cleaning Automation Pipeline.
